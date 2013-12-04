@@ -288,7 +288,13 @@ public class ClientsHandler {
             Statement statment = connection.createStatement();
             statment.executeUpdate("INSERT INTO Clients(cl_login, cl_password, cl_name, cl_surname, cl_middlename, cl_passport) " +
                     "VALUES ('" + login + "','" + pass + "', '" + name + "', '" + surname + "','" + middlename +"', " + passport + ")");
-            //throw new Exception();
+            connection.commit();
+            statment = connection.createStatement();
+            ResultSet result = statment.executeQuery("SELECT * FROM Clients WHERE id_client=1");
+            if (result.next()) {
+
+            }
+                       //throw new Exception();
             return "register success";
         } catch (Exception e) {
 
@@ -364,22 +370,25 @@ public class ClientsHandler {
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM Clients WHERE cl_login = '" + login + "' " +
-                    "                                     and cl_password = '" + pass +"'");
+                                                         "and cl_password = '" + pass +"'");
             if (resultSet.next()) {
-                Client client = new Client();
-                client.setId(resultSet.getInt("id_cllient"));
-                client.setName(resultSet.getString("cl_name"));
-                client.setMiddlename(resultSet.getString(("cl_middlename")));
-                client.setSurname(resultSet.getString("cl_surname"));
-                client.setBirthday(resultSet.getDate("cl_birthday"));
-                //client.setLogin(resultSet.getString("cl_login"));
-                client.setPassport(resultSet.getInt("cl_passport"));
+//                Client client = new Client();
+//                client.setId(resultSet.getInt("id_client"));
+//                client.setName(resultSet.getString("cl_name"));
+//                client.setMiddlename(resultSet.getString(("cl_middlename")));
+//                client.setSurname(resultSet.getString("cl_surname"));
+//                client.setBirthday(resultSet.getDate("cl_birthday"));
+//                //client.setLogin(resultSet.getString("cl_login"));
+//                client.setPassport(resultSet.getInt("cl_passport"));
 
-                return client.ToJSON();
+                return  "YES";//client.ToJSON();
             }
-            throw new Exception();
+            //throw new Exception();
+            else {
+                return "NO";
+            }
         } catch (Exception e) {
-            return "ERROR!";  //To change body of catch statement use File | Settings | File Templates.
+            return "ERROR!!!     ".concat(e.getMessage());  //To change body of catch statement use File | Settings | File Templates.
         }
     }
 
