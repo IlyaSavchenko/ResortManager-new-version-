@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resort Manager</title>
+    <link href="theme/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="theme/js-image-slider.js" type="text/javascript"></script>
+    <link href="theme/tooltip.css" rel="stylesheet" type="text/css" />
+    <script src="theme/tooltip.js" type="text/javascript"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        imageSlider.thumbnailPreview(function (thumbIndex) { return "<img src='images/thumb" + (thumbIndex + 1) + ".jpg' style='width:70px;height:44px;' />"; });
+    </script>
+</head>
+<body>
+    <div class="div1">
+    </div>
+    <div id="sliderFrame">
+        <div id="slider">
+
+            <img src="images/image-slider-1.jpg" alt="#cap1" />
+
+            <img src="images/image-slider-2.jpg" alt="Hello world 1" />
+            <img src="images/image-slider-3.jpg" alt="Hello world 2" />
+            <img src="images/image-slider-4.jpg" alt="#cap2" />
+            <img src="images/image-slider-5.jpg" alt="Hello world 5" />
+        </div>
+        <div style="display: none;">
+            <div id="cap1">
+                Hello world 4
+            </div>
+            <div id="cap2">
+                Hello world 3
+            </div>
+        </div>
+    </div>
+    <div class="div2">
+
+    </div>
+</body>
+</html>

@@ -1,40 +1,200 @@
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Resort Manager</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--<meta name="description" content="Pretty Simple Content Slider with jQuery and CSS3" />-->
+        <meta name="keywords" content="jquery,css3, content slider, slide, auto-play"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/stylemenu.css" type="text/css"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                background: url(images/bg.png) repeat;
+            }
+            a.back{
+                background:transparent url(back.png) no-repeat top left;
+                position:fixed;
+                width:150px;
+                height:27px;
+                outline:none;
+                bottom:0px;
+                left:0px;
+            }
+            #contents{
+                margin:150px auto 10px auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div id="wrapper">
+    <div id="content">
+		
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Главная">Главная</a></li>
+                <li><a href="#" title="Отели">Отели</a></li>
+                <li><a href="#" title="Услуги">Услуги</a></li>
+                <li><a href="#" title="Персоонал">Персоонал</a></li>
+                <li><a href="#" title="Отдых">Отдых</a></li>
+                <li><a href="auth.html" title="Авторизация">Авторизация</a></li>
+                <li><a href="registration.html" title="Регистрация">Регистрация</a></li>
+                <li><a href="#" title="Контакты">Контакты</a></li>
+                <li>
+                    <form>
+                        <input type="text" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+	   </div>
+</div>
+       <p align="center"><img src="title.png" /></p>
+            <a class="back" href=""></a>
 
-    <title>Resort manager</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        function onButton() {
-            var login = document.getElementById("login").value;
-            var pass = document.getElementById("pass").value;
-            //console.log(login);
-            $.ajax({
-                type: "GET",
-                url: "/rest/api/clients/auth?login=" + login + "&pass=" + pass,
-                success: function (msg) {
-                    //console.log(msg);
-                    if (msg == "YES")
-                    {
-                        document.location.replace("http://vk.com");
+            <div class="rotator">
+                <ul id="rotmenu">
+                    <li>
+                        <a href="rot1">Наши отели</a>
+                        <div style="display:none;">
+                            <div class="info_image">1.jpg</div>
+                            <div class="info_description">
+				 На нашем курорте функционирует два пятизвёздочных отеля. 
+                 В каждом отеле сто номеров бизнес- и люкс- классов.
+                 Из окон номеров открывается прекрасный вид на побережье...  
+                                <a href="#" class="more">Подробнее..</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="rot2">Места отдыха</a>
+                        <div style="display:none;">
+                            <div class="info_image">2.jpg</div>
+                            <div class="info_description">
+				 Отдыхая на нашем курорте, Вы сможете приятно провести свое время.
+                 В Вашем распоряжении 15 бассейнов, 3 теннисных корта, 4 салона джакузи и spa процедур 
+                 и многое-многое другое.. 
+                                <a href="#" class="more">Подробнее...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="rot3">Наши услуги</a>
+                        <div style="display:none;">
+                            <div class="info_image">3.jpg</div>
+                            <div class="info_description">
+				 Мы предоставляем Вам широкий спектр услуг. Отдыхая на нашем курорте,
+                 Вы сможете посетить огромное количество мест, где можно прекрасно отдохнуть и расслабиться ...
+                                <a href="#" class="more">Подробнее...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="rot4">Наш персоонал</a>
+                        <div style="display:none;">
+                            <div class="info_image">4.jpg</div>
+                            <div class="info_description">
+				 На курорте работает порядка 1000 служащих. Наш персоонал обучен, вежлив, аккуратен и 
+                 способен превратить Ваш отдых в сказку...
+                                <a href="#" class="more">Подробнее...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="rot5">Наше ПО</a>
+                        <div style="display:none;">
+                            <div class="info_image">5.jpg</div>
+                            <div class="info_description">
+                                На курорте функионирует программное обесчение, которое помогает  
+                                клиентам делать заказы и резервы одним нажатеим кнопки, а
+                                администраторам курорта отслеживать и выполнять все эти резервы и заказы...
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="rot1">
+                    <img src="" width="800" height="300" class="bg" alt=""/>
+                    <div class="heading">
+                        <h1></h1>
+                    </div>
+                    <div class="description">
+                        <p></p>
+
+                       
+                </div>
+            </div>
+        </div>
+        
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                var current = 1;
+                
+                var iterate		= function(){
+                    var i = parseInt(current+1);
+                    var lis = $('#rotmenu').children('li').size();
+                    if(i>lis) i = 1;
+                    display($('#rotmenu li:nth-child('+i+')'));
+                }
+                display($('#rotmenu li:first'));
+                var slidetime = setInterval(iterate,3000);
+				
+                $('#rotmenu li').bind('click',function(e){
+                    clearTimeout(slidetime);
+                    display($(this));
+                    e.preventDefault();
+                });
+				
+                function display(elem){
+                    var $this 	= elem;
+                    var repeat 	= false;
+                    if(current == parseInt($this.index() + 1))
+                        repeat = true;
+					
+                    if(!repeat)
+                        $this.parent().find('li:nth-child('+current+') a').stop(true,true).animate({'marginRight':'-20px'},300,function(){
+                            $(this).animate({'opacity':'0.7'},700);
+                        });
+					
+                    current = parseInt($this.index() + 1);
+					
+                    var elem = $('a',$this);
+                    
+                        elem.stop(true,true).animate({'marginRight':'0px','opacity':'1.0'},300);
+					
+                    var info_elem = elem.next();
+                    $('#rot1 .heading').animate({'left':'-420px'}, 500,'easeOutCirc',function(){
+                        $('h1',$(this)).html(info_elem.find('.info_heading').html());
+                        $(this).animate({'left':'0px'},400,'easeInOutQuad');
+                    });
+					
+                    $('#rot1 .description').animate({'bottom':'-270px'},500,'easeOutCirc',function(){
+                        $('p',$(this)).html(info_elem.find('.info_description').html());
+                        $(this).animate({'bottom':'0px'},400,'easeInOutQuad');
+                    })
+                    $('#rot1').prepend(
+                    $('<img/>',{
+                        style	:	'opacity:0',
+                        className : 'bg'
+                    }).load(
+                    function(){
+                        $(this).animate({'opacity':'1'},600);
+                        $('#rot1 img:first').next().animate({'opacity':'0'},700,function(){
+                            $(this).remove();
+                        });
                     }
-                    else
-                    {
-                        document.location.replace("http://odnoklassniki.ru");
-                    }
+                ).attr('src','images/'+info_elem.find('.info_image').html()).attr('width','800').attr('height','300')
+                );
                 }
             });
-        }
-    </script>
-
-</head>
-<body>
-
-
-<p>Login: <input type="text" id="login"></p>
-
-<p>Pass: <input type="password" id="pass"></p>
-<button onclick="onButton()">Try it</button>
-
-</body>
-
+        </script>
+    </body>
 </html>

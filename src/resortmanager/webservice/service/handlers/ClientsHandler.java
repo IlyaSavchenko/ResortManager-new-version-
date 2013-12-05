@@ -283,17 +283,18 @@ public class ClientsHandler {
     @Produces("text/plain")
     @Path("register")
     public String ClientRegister(@QueryParam("login") String login, @QueryParam("pass") String pass, @QueryParam("name") String name,
-                                 @QueryParam("surname") String surname, @QueryParam("middlename") String middlename, @QueryParam("passport") String passport){
+                                 @QueryParam("surname") String surname, @QueryParam("middlename") String middlename, @QueryParam("passport") String passport,
+                                 @QueryParam("birthday") String birthday){
         try {
             Statement statment = connection.createStatement();
-            statment.executeUpdate("INSERT INTO Clients(cl_login, cl_password, cl_name, cl_surname, cl_middlename, cl_passport) " +
-                    "VALUES ('" + login + "','" + pass + "', '" + name + "', '" + surname + "','" + middlename +"', " + passport + ")");
-            connection.commit();
-            statment = connection.createStatement();
-            ResultSet result = statment.executeQuery("SELECT * FROM Clients WHERE id_client=1");
-            if (result.next()) {
-
-            }
+            statment.executeUpdate("INSERT INTO Clients(cl_login, cl_password, cl_name, cl_surname, cl_middlename, cl_passport, cl_birthday) " +
+                    "VALUES ('" + login + "','" + pass + "', '" + name + "', '" + surname + "','" + middlename +"', " + passport + ", '"+ birthday+ "')");
+//            connection.commit();
+//            statment = connection.createStatement();
+//            ResultSet result = statment.executeQuery("SELECT * FROM Clients WHERE id_client=1");
+//            if (result.next()) {
+//
+//            }
                        //throw new Exception();
             return "register success";
         } catch (Exception e) {

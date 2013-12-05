@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="web:war" />
@@ -16,9 +20,13 @@
     <file path="/WebServiceApplication.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1385758027471" ignored="false" />
     <file path="/ConnectionSingleton.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1385916313487" ignored="false" />
     <file path="/test.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386122190637" ignored="false" />
-    <file path="/ClientsHandler.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1385921895741" ignored="false" />
-    <file path="/index.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386120427441" ignored="false" />
+    <file path="/ClientsHandler.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386177459912" ignored="false" />
+    <file path="/index.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386204568884" ignored="false" />
     <file path="/page.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386117804365" ignored="false" />
+    <file path="/registration.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386263297962" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386188681436" ignored="false" />
+    <file path="/a.dummy" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386204640955" ignored="false" />
+    <file path="/auth.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386262497675" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +77,9 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" line="369" class="resortmanager.webservice.service.handlers.ClientsHandler" package="resortmanager.webservice.service.handlers">
+      <breakpoint url="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" line="370" class="resortmanager.webservice.service.handlers.ClientsHandler" package="resortmanager.webservice.service.handlers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -86,7 +95,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -96,91 +104,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServicesHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ServicesHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientsHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="387" column="28" selection-start="16505" selection-end="16505" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="62" selection-start="0" selection-end="1242" vertical-scroll-proportion="-8.958333">
+            <state line="7" column="22" selection-start="453" selection-end="453" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/Hello.java">
+      <file leaf-file-name="js-image-slider.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/theme/js-image-slider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Service.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/Service.java">
+      <file leaf-file-name="as.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/as.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+            <state line="17" column="8" selection-start="941" selection-end="1594" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebServiceApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebServiceApplication.java">
+      <file leaf-file-name="auth.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/auth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+            <state line="78" column="60" selection-start="2903" selection-end="2903" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="stylereg.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/stylereg.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+            <state line="219" column="0" selection-start="5312" selection-end="5312" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="web-forms.rnc" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/web-forms.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="506" column="16" selection-start="11037" selection-end="11037" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionSingleton.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ConnectionSingleton.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="10" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+            <state line="20" column="17" selection-start="588" selection-end="588" vertical-scroll-proportion="0.4178273">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/test.html">
+      <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+            <state line="80" column="8" selection-start="3220" selection-end="3220" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styleauth.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/styleauth.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="72" selection-start="0" selection-end="5406" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0sac.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/0sac.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="35" selection-start="1163" selection-end="1163" vertical-scroll-proportion="-2.0833333">
               <folding />
             </state>
           </provider>
@@ -196,22 +204,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/DateIOHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/EventsHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/HotelHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ModeratorsHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/OrdersHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/RoomsHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ServicesHandler.java" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" />
         <option value="$PROJECT_DIR$/web/page.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/lib/index.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/index2.html" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java" />
         <option value="$PROJECT_DIR$/web/test1.html" />
         <option value="$PROJECT_DIR$/web/test.html" />
+        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" />
+        <option value="$PROJECT_DIR$/web/global.css" />
+        <option value="$PROJECT_DIR$/web/css/global.css" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/as.html" />
+        <option value="$PROJECT_DIR$/web/css/styleauth.css" />
+        <option value="$PROJECT_DIR$/web/registration.html" />
+        <option value="$PROJECT_DIR$/web/css/stylereg.css" />
+        <option value="$PROJECT_DIR$/web/auth.html" />
+        <option value="$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java" />
       </list>
     </option>
   </component>
@@ -222,11 +230,51 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="27" />
     <option name="width" value="1368" />
     <option name="height" value="742" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Class structure</id>
+          </State>
+          <State>
+            <id>Declaration redundancy</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Inheritance issues</id>
+          </State>
+          <State>
+            <id>Javadoc issues</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -256,8 +304,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,7 +350,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="theme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,29 +368,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResortManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResortManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,6 +518,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,6 +530,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.26-bin.jar!/" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -519,8 +546,10 @@
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/web/themes" />
+      <recent name="$PROJECT_DIR$/web/css" />
       <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
   </component>
@@ -790,14 +819,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3164983" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3164983" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36700338" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924242" sideWeight="0.27946126" order="2" side_tool="true" content_ui="tabs" />
@@ -808,7 +837,7 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24869695" sideWeight="0.36363637" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.68350166" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.68350166" order="0" side_tool="false" content_ui="combo" />
@@ -817,7 +846,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -887,88 +916,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/DateIOHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/EventsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/HotelHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ModeratorsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/OrdersHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/RoomsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ServicesHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="62" selection-start="0" selection-end="1242" vertical-scroll-proportion="-8.958333">
           <folding />
         </state>
       </provider>
@@ -980,16 +930,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ModeratorsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="28" selection-start="16505" selection-end="16505" vertical-scroll-proportion="0.0">
+        <state line="17" column="19" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+        <state line="298" column="20" selection-start="12706" selection-end="12722" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -997,6 +947,83 @@
     <entry file="file://$PROJECT_DIR$/web/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/theme/tooltip.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="2" selection-end="3" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/as.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="941" selection-end="1594" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/0sac.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="35" selection-start="1163" selection-end="1163" vertical-scroll-proportion="-2.0833333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="506" column="16" selection-start="11037" selection-end="11037" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="22" selection-start="453" selection-end="453" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/theme/js-image-slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="8" selection-start="3220" selection-end="3220" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/styleauth.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="72" selection-start="0" selection-end="5406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/stylereg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="0" selection-start="5312" selection-end="5312" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="60" selection-start="2903" selection-end="2903" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="17" selection-start="588" selection-end="588" vertical-scroll-proportion="0.4178273">
           <folding />
         </state>
       </provider>
