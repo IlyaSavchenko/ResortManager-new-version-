@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_resortmanager" default="compile.module.resortmanager">
+  <dirname property="module.resortmanager.basedir" file="${ant.file.module_resortmanager}"/>
+  
+  <property name="module.jdk.home.resortmanager" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.resortmanager" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.resortmanager" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.resortmanager" value="${compiler.args}"/>
+  
+  <property name="resortmanager.output.dir" value="${module.resortmanager.basedir}/out/production/ResortManager"/>
+  <property name="resortmanager.testoutput.dir" value="${module.resortmanager.basedir}/out/test/ResortManager"/>
+  
+  <path id="resortmanager.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="resortmanager.module.production.classpath">
+    <path refid="${module.jdk.classpath.resortmanager}"/>
+    <path refid="library.libs.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.26-bin.classpath"/>
+  </path>
+  
+  <path id="resortmanager.runtime.production.module.classpath">
+    <pathelement location="${resortmanager.output.dir}"/>
+    <path refid="library.libs.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.26-bin.classpath"/>
+  </path>
+  
+  <path id="resortmanager.module.classpath">
+    <path refid="${module.jdk.classpath.resortmanager}"/>
+    <pathelement location="${resortmanager.output.dir}"/>
+    <path refid="library.libs.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.26-bin.classpath"/>
+  </path>
+  
+  <path id="resortmanager.runtime.module.classpath">
+    <pathelement location="${resortmanager.testoutput.dir}"/>
+    <pathelement location="${resortmanager.output.dir}"/>
+    <path refid="library.libs.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.26-bin.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.resortmanager">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.resortmanager">
+    <patternset refid="excluded.from.module.resortmanager"/>
+  </patternset>
+  
+  <path id="resortmanager.module.sourcepath">
+    <dirset dir="${module.resortmanager.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.resortmanager" depends="compile.module.resortmanager.production,compile.module.resortmanager.tests" description="Compile module ResortManager"/>
+  
+  <target name="compile.module.resortmanager.production" depends="register.custom.compilers" description="Compile module ResortManager; production classes">
+    <mkdir dir="${resortmanager.output.dir}"/>
+    <javac2 destdir="${resortmanager.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.resortmanager}/javac">
+      <compilerarg line="${compiler.args.resortmanager}"/>
+      <bootclasspath refid="resortmanager.module.bootclasspath"/>
+      <classpath refid="resortmanager.module.production.classpath"/>
+      <src refid="resortmanager.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.resortmanager"/>
+    </javac2>
+    
+    <copy todir="${resortmanager.output.dir}">
+      <fileset dir="${module.resortmanager.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.resortmanager.tests" depends="register.custom.compilers,compile.module.resortmanager.production" description="compile module ResortManager; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.resortmanager" description="cleanup module">
+    <delete dir="${resortmanager.output.dir}"/>
+    <delete dir="${resortmanager.testoutput.dir}"/>
+  </target>
+</project>

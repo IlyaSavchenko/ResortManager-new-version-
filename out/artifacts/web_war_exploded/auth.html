@@ -16,14 +16,16 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
     <script type="text/javascript">
         function onButton() {
             var login = document.getElementById("user").value;
             var pass = document.getElementById("pass").value;
+            var md5 = hex_md5(pass);
             //console.log(login);
             $.ajax({
                 type: "GET",
-                url: "/rest/api/clients/auth?login=" + login + "&pass=" + pass,
+                url: "/rest/api/clients/auth?login=" + login + "&pass=" + md5,
                 success: function (msg) {
                     //console.log(msg);
                     if (msg == "YES")

@@ -15,10 +15,12 @@
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
     <script type="text/javascript">
         function onButton() {
             var login = document.getElementById("user").value;
             var pass = document.getElementById("pass").value;
+            var md5 = hex_md5(pass);
             var name = document.getElementById("name").value;
             var surname = document.getElementById("surname").value;
             var middlename = document.getElementById("middlename").value;
@@ -26,15 +28,17 @@
             var birthday = document.getElementById("birthday").value;
             var passrep = document.getElementById("passrep").value;
             //console.log(login);
+
+
             $.ajax({
                 type: "GET",
-                url: "/rest/api/clients/register?login=" + login + "&pass=" + pass + "&name=" + name + "&surname=" +
+                url: "/rest/api/clients/register?login=" + login + "&pass=" + md5 + "&name=" + name + "&surname=" +
                         surname + "&middlename=" + middlename +"&passport=" + passport + "&birthday=" + birthday,
                 success: function (msg) {
                     //console.log(msg);
                     if (msg == "register success")
                     {
-                        alert("cool");
+                        alert(md5);
                     }
                     else
                     {
