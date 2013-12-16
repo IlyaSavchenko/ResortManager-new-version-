@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/stylereg.css">
+    <link rel="stylesheet" href="css/stylemenu.css" type="text/css"/>
+    <style>
+        body
+        {
+            font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;
+            margin: 0;
+            background: url(images/bg.png) repeat;
+        }
+        input
+        {
+            background-color: transparent;
+            border: none;
+            font: 24px/1.5 cursive;
+        }
+
+        .otstup {
+            text-indent: 350px; /* Отступ первой строки в пикселах */
+            font-size:  24px;
+        }
+        .p{
+            font-size:  24px;
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var ii;
+        function parseGetParams() {
+            var $_GET = {};
+            var __GET = window.location.search.substring(1).split("login=");
+            for(var i=1; i<__GET.length; i++) {
+//                var getVar = __GET[i].split("=");
+//                $_GET[getVar[0]] = typeof(getVar[1])=="undefined" ? "" : getVar[1];
+                ii = __GET[1];
+            }
+            return ii;
+        }
+
+        function add(param){
+            console.log("button clicked");
+            $.ajax({
+                type: 'GET',
+                url : "/rest/api/clients/by_login/" + param,
+
+                success : function(data) {
+                    console.log(data);
+                    var result = jQuery.parseJSON(data);
+                    var name =  result.name;
+                    var middlename = result.middlename;
+                    var ns = name + " " + middlename;
+                    document.getElementById("nameL").value = ns;
+                    document.getElementById("log").value = result.login;
+                    document.getElementById("name").value = result.name;
+                    document.getElementById("surname").value = result.surname;
+                    document.getElementById("middlename").value = result.middlename;
+                    document.getElementById("passport").value = result.passport;
+                    document.getElementById("birthday").value = result.birthday;
+                }
+
+            });
+//            var get = location.href.indexOf('?')+1;
+//            var hashes = window.location.href.indexOf('?') + 1;
+//            //                    indexOf('?') + 1);
+//
+//            alert(get);
+
+        }
+
+
+        window.onload = function () {
+            parseGetParams();
+            add(ii);
+        }
+    </script>
+
+
+
+<body>
+<div id="wrapper">
+    <div id="content">
+
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Главная">Главная</a></li>
+                <li><a href="#" title="Отели">Отели</a></li>
+                <li><a href="#" title="Услуги">Услуги</a></li>
+                <li><a href="#" title="Персоонал">Персоонал</a></li>
+                <li><a href="#" title="Отдых">Отдых</a></li>
+                <li><a href="auth.html" title="Авторизация">Авторизация</a></li>
+                <li><a href="registration.html" title="Регистрация">Регистрация</a></li>
+                <li><a href="#" title="Контакты">Контакты</a></li>
+                <li>
+                    <form>
+                        <input type="text" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <?php  print $_GET['login']; ?>
+     <p align = "center" class="p"> Здравствуйте, <input type="text" id="nameL"  disabled> </p>
+     </br>
+     <p align = "center" class="p">Ваши данные:</p>
+    </br>
+    <p class="otstup"> Ваш логин:  <input type="text" id="log"  disabled> </p>
+    </br>
+    <p class="otstup"> Имя: <input type="text" id="name"  disabled> </p>
+    </br>
+    <p class="otstup"> Отчество: <input type="text" id="middlename"  disabled> </p>
+    </br>
+    <p class="otstup"> Фамилия: <input type="text" id="surname"  disabled> </p>
+    </br>
+    <p class="otstup"> Пасспортные данные: <input type="text" id="passport"  disabled> </p>
+    </br>
+    <p class="otstup"> Дата рождения: <input type="text" id="birthday"  disabled> </p>
+    </br>
+    <p class="otstup"> Электронная почта: <input type="text" id="email"  disabled> </p>
+    </br>
+    </br>
+    <p align = "center">Позже, по почте, с Вами свяжется администратор курорта и предложит варианты, когда будут осуществляться заезды. Спасибо за понимание! </p>
+</body>
+</html>
+
+
+

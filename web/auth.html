@@ -30,18 +30,39 @@
                     //console.log(msg);
                     if (msg == "YES")
                     {
-                        alert("Success!!!");
-                        //document.location.replace("http://vk.com");
+                        //alert("Success!!!");
+
+                       //     window.location.href = 'http://app-resor1t.rhcloud.com/home.php?login='login;
+                       document.location.replace("http://localhost:8081/home.html?login=" + login);
                     }
                     else
                     {
-                        alert("Bad");
+                        alert("Неверный логин или пароль! Проверьте правильность ввода.");
                         //document.location.replace("http://odnoklassniki.ru");
                     }
                 }
             });
         }
     </script>
+
+    <script language="javascript">
+
+    </script>
+
+    <script type="text/javascript">
+        function onlyNumber(evt) {
+            var theEvent = evt || window.event;
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode( key );
+            var regex = /[0-9]|\./;
+            if( !regex.test(key) ) {
+                theEvent.returnValue = false;
+                if(theEvent.preventDefault) theEvent.preventDefault();
+            }
+        }
+        </script>
+
+
 </head>
 
 <body>
@@ -75,7 +96,7 @@
     <fieldset id="inputs">
         <input id="user" type="text" placeholder="Логин" autofocus required>
         </br>
-        <input id="pass" type="password" placeholder="Пароль" required>
+        <input id="pass" type="password"  placeholder="Пароль" required>
     </fieldset>
         <button onclick="onButton()">ВОЙТИ</button>
         </br>

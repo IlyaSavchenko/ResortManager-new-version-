@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Регистрация</title>
@@ -24,10 +24,8 @@
             var name = document.getElementById("name").value;
             var surname = document.getElementById("surname").value;
             var middlename = document.getElementById("middlename").value;
-            var passport = document.getElementById("passport").value;
+            var passport= document.getElementById("passport").value;
             var birthday = document.getElementById("birthday").value;
-            var passrep = document.getElementById("passrep").value;
-            //console.log(login);
 
 
             $.ajax({
@@ -38,7 +36,8 @@
                     //console.log(msg);
                     if (msg == "register success")
                     {
-                        alert(md5);
+                        alert("Регистрация прошла успешно! Спасибо Вам, за использование нашего сервиса.");
+                        document.location.replace("http://localhost:8081/auth.html");
                     }
                     else
                     {
@@ -48,6 +47,26 @@
             });
         }
     </script>
+
+
+
+
+    <script type="text/javascript">
+        function onlyPassport(evt) {
+
+            var theEvent = evt || window.event;
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode( key );
+            var regex = /[0-9]  /;
+
+            if( !regex.test(key) ) {
+                theEvent.returnValue = false;
+                if(theEvent.preventDefault)
+                    theEvent.preventDefault();
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -82,12 +101,11 @@
     <fieldset id="inputs">
         <input id="user" type="text" placeholder="Логин" autofocus required></br>
         <input id="pass" type="password" placeholder="Пароль" required>   </br>
-        <input id="passrep" type="password" placeholder="Повторите пароль" required>  </br>
         <input id="name" type="text" placeholder="Имя" autofocus required>  </br>
         <input id="surname" type="text" placeholder="Фамилия" autofocus required>   </br>
         <input id="middlename" type="text" placeholder="Отчество" autofocus required> </br>
-        <input id="passport" type="text" placeholder="Пасспорт" required>    </br>
-        <input id="birthday" type="text" placeholder="Дата рождения" autofocus required> </br>
+        <input id="passport"  maxlength="4" type="text"  placeholder="Пасспорт" required> </br>
+        <input id="birthday"  maxlength="10" type="text" placeholder="Дата рождения" autofocus required> </br>
     </fieldset>
         <button onclick="onButton()">Регистрация</button>
         </td>
