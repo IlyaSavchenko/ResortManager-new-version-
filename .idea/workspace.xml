@@ -16,27 +16,30 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/web.xml" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1385764471457" ignored="false" />
     <file path="/index.jsp" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1385757130989" ignored="false" />
-    <file path="/Dummy.txt" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386596916478" ignored="false" />
+    <file path="/Dummy.txt" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387407268228" ignored="false" />
     <file path="/WebServiceApplication.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1385758027471" ignored="false" />
-    <file path="/ConnectionSingleton.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386533866821" ignored="false" />
+    <file path="/ConnectionSingleton.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387407958690" ignored="false" />
     <file path="/test.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386122190637" ignored="false" />
-    <file path="/ClientsHandler.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386598806480" ignored="false" />
+    <file path="/ClientsHandler.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387470993101" ignored="false" />
     <file path="/index.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386204568884" ignored="false" />
     <file path="/page.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386117804365" ignored="false" />
-    <file path="/registration.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387025904227" ignored="false" />
+    <file path="/registration.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387468399454" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386188681436" ignored="false" />
     <file path="/a.dummy" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386204640955" ignored="false" />
     <file path="/auth.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387200653002" ignored="false" />
     <file path="/fragment.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386874075637" ignored="false" />
-    <file path="$PROJECT_DIR$/../Server for resort manager/WebService/test/resortmanager/data/ClientTest.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386599551635" ignored="false" />
+    <file path="$PROJECT_DIR$/../Server for resort manager/WebService/test/resortmanager/data/ClientTest.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387406531168" ignored="false" />
     <file path="/ClientTest.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386599533774" ignored="false" />
     <file path="$PROJECT_DIR$/../Server for resort manager/WebService/src/resortmanager/webservice/service/handlers/ClientsHandler.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386598806480" ignored="false" />
     <file path="$PROJECT_DIR$/../Server for resort manager/WebService/src/resortmanager/webservice/ClientTest.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386599144647" ignored="false" />
     <file path="$PROJECT_DIR$/../Server for resort manager/WebService/test/resortmanager/webservice/service/handlers/ClientTest.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386599322035" ignored="false" />
     <file path="$PROJECT_DIR$/../Server for resort manager/WebService/src/resortmanager/data/models/ClientsHandler.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1386599391773" ignored="false" />
-    <file path="/home.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387200565838" ignored="false" />
+    <file path="/home.html" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387470330023" ignored="false" />
     <file path="/auth.php" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387114989898" ignored="false" />
     <file path="/home.php" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387117183191" ignored="false" />
+    <file path="/Client.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387470620991" ignored="false" />
+    <file path="$PROJECT_DIR$/../Server for resort manager/WebService/src/resortmanager/webservice/dal/ConnectionSingleton.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387407826542" ignored="false" />
+    <file path="/FirstTest.java" changelist="ec6eb0a7-2000-4f03-add3-27ceb27f5b2a" time="1387447267555" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -88,23 +96,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" line="370" class="resortmanager.webservice.service.handlers.ClientsHandler" package="resortmanager.webservice.service.handlers">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -114,73 +106,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.html">
+      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resortmanager/data/models/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="39" selection-start="1443" selection-end="1447" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionSingleton.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="706" selection-end="706" vertical-scroll-proportion="0.27094972">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSONMarshallObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/data/JSONMarshallObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="61" selection-start="1896" selection-end="1896" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebServiceApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebServiceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientsHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.875">
+            <state line="75" column="17" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,7 +118,7 @@
       <file leaf-file-name="auth.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/auth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="71" selection-start="1576" selection-end="1576" vertical-scroll-proportion="-10.791667">
+            <state line="54" column="102" selection-start="2153" selection-end="2153" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -198,7 +127,25 @@
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="54" selection-start="1729" selection-end="1729" vertical-scroll-proportion="10.458333">
+            <state line="53" column="20" selection-start="1824" selection-end="1824" vertical-scroll-proportion="-9.041667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientsHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="93" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.54545456">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/registration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="0" selection-start="2305" selection-end="2305" vertical-scroll-proportion="-6.5">
               <folding />
             </state>
           </provider>
@@ -214,9 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/test1.html" />
-        <option value="$PROJECT_DIR$/web/test.html" />
-        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" />
         <option value="$PROJECT_DIR$/web/global.css" />
         <option value="$PROJECT_DIR$/web/css/global.css" />
         <option value="$PROJECT_DIR$/web/as.html" />
@@ -226,10 +170,13 @@
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/auth.php" />
         <option value="$PROJECT_DIR$/web/home.php" />
-        <option value="$PROJECT_DIR$/web/registration.html" />
         <option value="$PROJECT_DIR$/web/auth.html" />
-        <option value="$PROJECT_DIR$/web/home.html" />
+        <option value="$PROJECT_DIR$/test/test/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java" />
+        <option value="$PROJECT_DIR$/src/resortmanager/data/models/Client.java" />
+        <option value="$PROJECT_DIR$/web/registration.html" />
+        <option value="$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java" />
+        <option value="$PROJECT_DIR$/web/home.html" />
       </list>
     </option>
   </component>
@@ -245,9 +192,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="27" />
+    <option name="y" value="28" />
     <option name="width" value="1368" />
-    <option name="height" value="742" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -412,6 +359,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResortManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResortManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -493,10 +458,6 @@
               <option name="myItemId" value="webservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -517,32 +478,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResortManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResortManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resortmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,29 +487,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server for resort manager/WebService" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="resortmanager" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -596,6 +532,70 @@
       </JSDebuggerConfigurationSettings>
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FirstTest.simple_add_test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResortManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.FirstTest" />
+      <option name="METHOD_NAME" value="simple_add_test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FirstTest.simple_login_test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResortManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.FirstTest" />
+      <option name="METHOD_NAME" value="simple_login_test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -792,13 +792,17 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat Server" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.simple_add_test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.simple_login_test" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.simple_login_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.simple_add_test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -853,30 +857,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="28" width="1368" height="707" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3181818" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35016835" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19848485" sideWeight="0.6601073" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.68515205" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33989266" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35016835" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924242" sideWeight="0.27946126" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291592" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.68686867" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24869695" sideWeight="0.36363637" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.68350166" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15075758" sideWeight="0.6818182" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27348486" sideWeight="0.6601073" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737032" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -951,11 +955,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/CliOrdHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="39" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resortmanager/data/models/Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="31" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" />
@@ -976,11 +975,6 @@
         <state line="219" column="0" selection-start="5312" selection-end="5312" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/data/models/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
@@ -995,27 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="39" selection-start="1443" selection-end="1447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resortmanager/data/JSONMarshallObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
@@ -1023,30 +996,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="61" selection-start="1896" selection-end="1896" vertical-scroll-proportion="-8.75">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.31931165">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/home.html">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="54" selection-start="1729" selection-end="1729" vertical-scroll-proportion="10.458333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="71" selection-start="1576" selection-end="1576" vertical-scroll-proportion="-10.791667">
+        <state line="24" column="73" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/dal/ConnectionSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="706" selection-end="706" vertical-scroll-proportion="0.27094972">
+        <state line="27" column="45" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="34" selection-start="643" selection-end="643" vertical-scroll-proportion="0.47826087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resortmanager/data/models/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="17" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="2305" selection-end="2305" vertical-scroll-proportion="-6.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="102" selection-start="2153" selection-end="2153" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="20" selection-start="1824" selection-end="1824" vertical-scroll-proportion="-9.041667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resortmanager/webservice/service/handlers/ClientsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="93" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.54545456">
           <folding />
         </state>
       </provider>
@@ -1131,7 +1139,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.slf4j:com.springsource.slf4j.org.apache.log4j:1.6.1</last-edited>
+          <last-edited>junit:junit:4.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -17,10 +17,17 @@ public class ConnectionSingleton {
 
     public static Connection getConnection() {
         //  only for development
-//        String connectionString = "jdbc:mysql://127.6.205.130:3306/app";                //6.205.130:3306
-        String connectionString = "jdbc:mysql://127.0.0.1:3307/app";                //6.205.130:3306
-        String connectionUser = "adminqkjBH5S";
-        String connectionPassword = "naaNYLlMJcpI";
+//        String connectionString = "jdbc:mysql://127.6.205.130:3306/manager";                //6.205.130:3306
+//        String connectionString = "jdbc:mysql://127.0.0.1:3306/manager";                //6.205.130:3306
+//        String connectionUser = "adminBfVKMLs";
+//        String connectionPassword = "a-JubLiH3AMU";
+
+
+        String connectionString = "jdbc:mysql://127.0.0.1:3306/application";                //6.205.130:3306
+        String connectionUser = "root";
+        String connectionPassword = "newPass1";
+
+
 
         //
         if (connection == null) {

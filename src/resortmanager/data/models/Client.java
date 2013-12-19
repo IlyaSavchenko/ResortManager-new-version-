@@ -20,9 +20,10 @@ public class Client implements JSONMarshallObject {
     private String surname;
     private String middlename;
     private Date birthday;
-    private int passport;
+    private String passport;
     private String login;
     private String password;
+    private String email;
 
     public void setLogin(String login) {
         this.login = login;
@@ -72,11 +73,11 @@ public class Client implements JSONMarshallObject {
         this.birthday = birthday;
     }
 
-    public int getPassport(int cl_passport) {
+    public String getPassport(String cl_passport) {
         return passport;
     }
 
-    public void setPassport(int passport) {
+    public void setPassport(String passport) {
         this.passport = passport;
     }
 
@@ -92,16 +93,16 @@ public class Client implements JSONMarshallObject {
         return json;
     }
 
-    public static Client FromJSON(String jsonString) {
-        ObjectMapper mapper = new ObjectMapper();
-        Client client = new Client();
-        try {
-            client = mapper.readValue(jsonString, Client.class);
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        return client;
-    }
+//    public static Client FromJSON(String jsonString) {
+//        ObjectMapper mapper = new ObjectMapper();
+//        Client client = new Client();
+//        try {
+//            client = mapper.readValue(jsonString, Client.class);
+//        } catch (IOException e) {
+//            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+//        }
+//        return client;
+//    }
 
     public String getPassword() {
         return password;
@@ -109,5 +110,13 @@ public class Client implements JSONMarshallObject {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

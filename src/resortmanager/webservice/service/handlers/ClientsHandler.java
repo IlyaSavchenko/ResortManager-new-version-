@@ -33,7 +33,7 @@ public class ClientsHandler {
                 client.setMiddlename(resultSet.getString(("cl_middlename")));
                 client.setSurname(resultSet.getString("cl_surname"));
                 client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.setPassport(resultSet.getInt("cl_passport"));
+                client.setPassport(resultSet.getString("cl_passport"));
 
                 client.setPassword(resultSet.getString("cl_password"));
                 return client.ToJSON();
@@ -53,12 +53,13 @@ public class ClientsHandler {
             ResultSet resultSet = statment.executeQuery("SELECT * FROM Clients WHERE cl_login = '" + login + "'");
             if (resultSet.next()){
                 Client client = new Client();
-                client.setId(resultSet.getInt("id_client"));
+                client.setLogin(resultSet.getString("cl_login"));
                 client.setName(resultSet.getString("cl_name"));
                 client.setMiddlename(resultSet.getString(("cl_middlename")));
                 client.setSurname(resultSet.getString("cl_surname"));
                 client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.setPassport(resultSet.getInt("cl_passport"));
+                client.setPassport(resultSet.getString("cl_passport"));
+                client.setEmail(resultSet.getString("cl_Email"));
                 return client.ToJSON();
             }
             throw new Exception();
@@ -68,28 +69,6 @@ public class ClientsHandler {
     }
 
 
-    @GET
-    @Produces("text/plain")
-    @Path("by_passport/{passport}")
-    public String ClientByPassport(@PathParam("passport") String passport){
-        try {
-            Statement statment = connection.createStatement();
-            ResultSet resultSet = statment.executeQuery("SELECT * FROM Clients WHERE cl_passport = '" + passport + "'");
-            if (resultSet.next()){
-                Client client = new Client();
-                client.setId(resultSet.getInt("id_client"));
-                client.setLogin(resultSet.getString("cl_login"));
-                client.setName(resultSet.getString("cl_name"));
-                client.setMiddlename(resultSet.getString(("cl_middlename")));
-                client.setSurname(resultSet.getString("cl_surname"));
-                client.setBirthday(resultSet.getDate("cl_birthday"));
-                return client.ToJSON();
-            }
-            throw new Exception();
-        } catch (Exception e) {
-            return "ERROR";  //To change body of catch statement use  File | Settings | File Templates.
-        }
-    }
 
     @GET
     @Produces("text/plain")
@@ -108,13 +87,13 @@ public class ClientsHandler {
                     json = json.concat(",");
                 }
                 Client client = new Client();
-                client.setId(resultSet.getInt("id_client"));
                 client.setLogin(resultSet.getString("cl_login"));
                 client.setName(resultSet.getString("cl_name"));
                 client.setMiddlename(resultSet.getString(("cl_middlename")));
                 client.setSurname(resultSet.getString("cl_surname"));
                 client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.setPassport(resultSet.getInt("cl_passport"));
+                client.setPassport(resultSet.getString("cl_passport"));
+                client.setEmail(resultSet.getString("cl_Email"));
                 json = json.concat(client.ToJSON());
             }
             if (!firstRecord) {
@@ -152,7 +131,7 @@ public class ClientsHandler {
                 client.setMiddlename(resultSet.getString(("cl_middlename")));
                 client.setSurname(resultSet.getString("cl_surname"));
                 client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.getPassport(resultSet.getInt("cl_passport"));
+                client.getPassport(resultSet.getString("cl_passport"));
 
                 json = json.concat(client.ToJSON());
             }
@@ -167,128 +146,18 @@ public class ClientsHandler {
         }
     }
 
-    @GET
-    @Produces("text/plain")
-    @Path("by_name/{name}")
-    public String ClientByName(@PathParam("name") String name){
-        try {
-            Statement statment = connection.createStatement();
-            ResultSet resultSet = statment.executeQuery("SELECT * FROM Clients WHERE cl_name = '" + name + "'");
-            String json = "[";
-            boolean firstRecord = true;
-            while (resultSet.next()){
-                if (firstRecord) {
-                    firstRecord = false;
-                }
-                else {
-                    json = json.concat(",");
-                }
-                Client client = new Client();
-                client.setId(resultSet.getInt("id_client"));
-                client.setLogin(resultSet.getString("cl_login"));
-                client.setName(resultSet.getString("cl_name"));
-                client.setMiddlename(resultSet.getString(("cl_middlename")));
-                client.setSurname(resultSet.getString("cl_surname"));
-                client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.getPassport(resultSet.getInt("cl_passport"));
-                json = json.concat(client.ToJSON());
-            }
-            if (!firstRecord) {
-                return json.concat("]");
-            }
-            else {
-                throw new Exception();
-            }
-        } catch (Exception e) {
-            return "ERROR";  //To change body of catch statement use File | Settings | File Templates.
-        }
-    }
 
-    @GET
-    @Produces("text/plain")
-    @Path("by_middlename/{middlename}")
-    public String ClientByMiddlename(@PathParam("middlename") String middlename){
-        try {
-            Statement statment = connection.createStatement();
-            ResultSet resultSet = statment.executeQuery("SELECT * FROM Clients WHERE cl_middlename = '" + middlename + "'");
-            String json = "[";
-            boolean firstRecord = true;
-            while (resultSet.next()){
-                if (firstRecord) {
-                    firstRecord = false;
-                }
-                else {
-                    json = json.concat(",");
-                }
-                Client client = new Client();
-                client.setId(resultSet.getInt("id_client"));
-                client.setLogin(resultSet.getString("cl_login"));
-                client.setName(resultSet.getString("cl_name"));
-                client.setMiddlename(resultSet.getString(("cl_middlename")));
-                client.setSurname(resultSet.getString("cl_surname"));
-                client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.getPassport(resultSet.getInt("cl_passport"));
-                json = json.concat(client.ToJSON());
-            }
-            if (!firstRecord) {
-                return json.concat("]");
-            }
-            else {
-                throw new Exception();
-            }
-        } catch (Exception e) {
-            return "ERROR";  //To change body of catch statement use File | Settings | File Templates.
-        }
-    }
-
-    @GET
-    @Produces("text/plain")
-    @Path("snm")
-    public String ClientByNSM(@QueryParam("name") String name, @QueryParam("surname") String surname, @QueryParam("middlename") String middlename){
-        try {
-            Statement statment = connection.createStatement();
-            ResultSet resultSet = statment.executeQuery("SELECT * FROM Clients WHERE cl_surname = '" + surname + "' and " +
-                    " cl_name = '" + name + "' and cl_middlename = '" + middlename + "'");
-            String json = "[";
-            boolean firstRecord = true;
-            while (resultSet.next()){
-                if (firstRecord) {
-                    firstRecord = false;
-                }
-                else {
-                    json = json.concat(",");
-                }
-                Client client = new Client();
-                client.setId(resultSet.getInt("id_client"));
-                client.setLogin(resultSet.getString("cl_login"));
-                client.setName(resultSet.getString("cl_name"));
-                client.setMiddlename(resultSet.getString(("cl_middlename")));
-                client.setSurname(resultSet.getString("cl_surname"));
-                client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.getPassport(resultSet.getInt("cl_passport"));
-                json = json.concat(client.ToJSON());
-            }
-            if (!firstRecord) {
-                return json.concat("]");
-            }
-            else {
-                throw new Exception();
-            }
-        } catch (Exception e) {
-            return "ERROR";  //To change body of catch statement use File | Settings | File Templates.
-        }
-    }
 
     @GET
     @Produces("text/plain")
     @Path("register")
     public String ClientRegister(@QueryParam("login") String login, @QueryParam("pass") String pass, @QueryParam("name") String name,
-                                 @QueryParam("surname") String surname, @QueryParam("middlename") String middlename, @QueryParam("passport") String passport,
+                                 @QueryParam("surname") String surname, @QueryParam("middlename") String middlename, @QueryParam("email") String email, @QueryParam("passport") int passport,
                                  @QueryParam("birthday") String birthday){
         try {
             Statement statment = connection.createStatement();
-            statment.executeUpdate("INSERT INTO Clients(cl_login, cl_password, cl_name, cl_surname, cl_middlename, cl_passport, cl_birthday) " +
-                    "VALUES ('" + login + "','" + pass + "', '" + name + "', '" + surname + "','" + middlename +"', " + passport + ", '"+ birthday+ "')");
+            statment.executeUpdate("INSERT INTO Clients(cl_login, cl_password, cl_name, cl_surname, cl_middlename,cl_Email, cl_passport, cl_birthday) " +
+                    "VALUES ('" + login + "','" + pass + "', '" + name + "', '" + surname + "','" + middlename +"', '"+ email + "', "+ passport + ", '" + birthday+ "')");
 //            connection.commit();
 //            statment = connection.createStatement();
 //            ResultSet result = statment.executeQuery("SELECT * FROM Clients WHERE id_client=1");
@@ -298,7 +167,7 @@ public class ClientsHandler {
                        //throw new Exception();
             return "register success";
         } catch (Exception e) {
-
+            e.printStackTrace();
             return "ERROR";  //To change body of catch statement use File | Settings | File Templates.
         }
     }
@@ -367,7 +236,7 @@ public class ClientsHandler {
     @GET
     @Produces("text/plain")
     @Path("auth")
-    public String ModeratorById(@QueryParam("login") String login, @QueryParam("pass") String pass){
+    public String Auth(@QueryParam("login") String login, @QueryParam("pass") String pass){
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM Clients WHERE cl_login = '" + login + "' " +

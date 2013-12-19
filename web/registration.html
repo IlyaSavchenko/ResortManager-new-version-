@@ -11,7 +11,9 @@
             font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;    
             margin: 0;
             background: url(images/bg.png) repeat; 
-    }
+        }
+
+
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -26,12 +28,13 @@
             var middlename = document.getElementById("middlename").value;
             var passport= document.getElementById("passport").value;
             var birthday = document.getElementById("birthday").value;
+            var email = document.getElementById("email").value;
 
 
             $.ajax({
                 type: "GET",
-                url: "/rest/api/clients/register?login=" + login + "&pass=" + md5 + "&name=" + name + "&surname=" +
-                        surname + "&middlename=" + middlename +"&passport=" + passport + "&birthday=" + birthday,
+                url: "http://localhost:8081/rest/api/clients/register?login=" + login + "&pass=" + md5 + "&name=" + name + "&surname=" +
+                        surname + "&middlename=" + middlename + "&email=" + email + "&passport=" + passport + "&birthday=" + birthday,
                 success: function (msg) {
                     //console.log(msg);
                     if (msg == "register success")
@@ -45,6 +48,8 @@
                     }
                 }
             });
+
+
         }
     </script>
 
@@ -52,19 +57,33 @@
 
 
     <script type="text/javascript">
-        function onlyPassport(evt) {
-
+        function onlyNumber(evt) {
             var theEvent = evt || window.event;
             var key = theEvent.keyCode || theEvent.which;
             key = String.fromCharCode( key );
-            var regex = /[0-9]  /;
-
+            var regex = /[0-9]|\./;
             if( !regex.test(key) ) {
                 theEvent.returnValue = false;
-                if(theEvent.preventDefault)
-                    theEvent.preventDefault();
+                if(theEvent.preventDefault) theEvent.preventDefault();
             }
         }
+
+
+        function isValidEmailAddress(emailAddress) {
+
+            var email = document.getElementById("email").value;
+            var pattern = new RegExp(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+            if(!pattern.test(emailAddress))
+            {
+                alert("no");
+            }
+            else
+            {
+                alert("yes");
+            }
+        }
+
+
     </script>
 
 </head>
@@ -104,7 +123,8 @@
         <input id="name" type="text" placeholder="Имя" autofocus required>  </br>
         <input id="surname" type="text" placeholder="Фамилия" autofocus required>   </br>
         <input id="middlename" type="text" placeholder="Отчество" autofocus required> </br>
-        <input id="passport"  maxlength="4" type="text"  placeholder="Пасспорт" required> </br>
+        <input id="email" onkeyup="isValidEmailAddress(this.value)" type="text" placeholder="E-mail" autofocus required></br>
+        <input id="passport"  onkeypress="onlyNumber(event)" maxlength="4" type="text"  placeholder="Пасспорт" required> </br>
         <input id="birthday"  maxlength="10" type="text" placeholder="Дата рождения" autofocus required> </br>
     </fieldset>
         <button onclick="onButton()">Регистрация</button>

@@ -44,12 +44,13 @@
         }
 
         function add(param){
-            console.log("button clicked");
+            //console.log("button clicked");
             $.ajax({
                 type: 'GET',
-                url : "/rest/api/clients/by_login/" + param,
+                url : "http://localhost:8081/rest/api/clients/by_login/" + param,
 
                 success : function(data) {
+
                     console.log(data);
                     var result = jQuery.parseJSON(data);
                     var name =  result.name;
@@ -62,6 +63,7 @@
                     document.getElementById("middlename").value = result.middlename;
                     document.getElementById("passport").value = result.passport;
                     document.getElementById("birthday").value = result.birthday;
+                    document.getElementById()
                 }
 
             });
