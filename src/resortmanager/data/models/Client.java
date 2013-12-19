@@ -93,16 +93,16 @@ public class Client implements JSONMarshallObject {
         return json;
     }
 
-//    public static Client FromJSON(String jsonString) {
-//        ObjectMapper mapper = new ObjectMapper();
-//        Client client = new Client();
-//        try {
-//            client = mapper.readValue(jsonString, Client.class);
-//        } catch (IOException e) {
-//            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-//        }
-//        return client;
-//    }
+    public static Client FromJSON(String jsonString) {
+        ObjectMapper mapper = new ObjectMapper();
+        Client client = new Client();
+        try {
+            client = mapper.readValue(jsonString, Client.class);
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        return client;
+    }
 
     public String getPassword() {
         return password;

@@ -58,7 +58,7 @@ public class ClientsHandler {
                 client.setMiddlename(resultSet.getString(("cl_middlename")));
                 client.setSurname(resultSet.getString("cl_surname"));
                 client.setBirthday(resultSet.getDate("cl_birthday"));
-                client.setPassport(resultSet.getString("cl_passport"));
+                client.setPassport(String.valueOf(resultSet.getInt("cl_passport")));
                 client.setEmail(resultSet.getString("cl_Email"));
                 return client.ToJSON();
             }
@@ -68,7 +68,29 @@ public class ClientsHandler {
         }
     }
 
-
+    @GET
+    @Produces("text/plain")
+    @Path("compare/{login}")
+    public String ClientCompareByLogin(@PathParam("login") String login){
+        try {
+            Statement statment = connection.createStatement();
+            ResultSet resultSet = statment.executeQuery("SELECT * FROM Clients WHERE cl_login = '" + login + "'");
+            if (resultSet.next()){
+                Client client = new Client();
+                client.setLogin(resultSet.getString("cl_login"));
+                client.setName(resultSet.getString("cl_name"));
+                client.setMiddlename(resultSet.getString(("cl_middlename")));
+                client.setSurname(resultSet.getString("cl_surname"));
+                client.setBirthday(resultSet.getDate("cl_birthday"));
+                client.setPassport(String.valueOf(resultSet.getInt("cl_passport")));
+                client.setEmail(resultSet.getString("cl_Email"));
+                return client.ToJSON();
+            }
+            throw new Exception();
+        } catch (Exception e) {
+            return "ERROR";  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
 
     @GET
     @Produces("text/plain")

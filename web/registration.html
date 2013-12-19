@@ -13,7 +13,12 @@
             background: url(images/bg.png) repeat; 
         }
 
-
+        .input
+        {
+            background-color: transparent;
+            border: none;
+            width: 10px;
+        }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -30,6 +35,90 @@
             var birthday = document.getElementById("birthday").value;
             var email = document.getElementById("email").value;
 
+            var patternLogin = new RegExp(/^[a-z0-9]+([_.-][a-z0-9]+)?$/);
+            if (patternLogin.test(login)){
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/rest/api/clients/compare/" + login,
+                    success: function (msg) {
+                        var result = jQuery.parseJSON(msg);
+                        var log =  result.login;
+                        if (log == login){
+                            document.getElementById("loginCheck").innerHTML = "Такой логин уже существует!";
+                        }
+                        else{
+                            document.getElementById("loginCheck").innerHTML = "Поле заполнено верно";
+                        }
+                    }
+                });
+            }
+            else{
+                document.getElementById("loginCheck").innerHTML = "Логин может состоять из строчных латинских букв и цифр";
+                return;
+            }
+
+
+
+            var patternEmail = new RegExp(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+            if (!patternEmail.test(email)){
+                document.getElementById("emailCheck").innerHTML = "Не верно введён email. Пример ввода: 'email@mail.com'";
+                return;
+            }
+
+            var patternName = new RegExp(/^([a-zA-Z])$/);
+            if (!patternName.test(name)){
+                document.getElementById("nameCheck").innerHTML = "Имя должно состоять только из букв!";
+                return;
+            }
+            else
+            {
+                document.getElementById("nameCheck").innerHTML = "Поле заполнено верно";
+                return;
+            }
+
+            var patternSurname = new RegExp(/^([a-zA-Z])$/);
+            if (!patternSurname.test(surname)){
+                document.getElementById("surnameCheck").innerHTML = "Фамилия должна состоять только из букв!";
+                return;
+            }
+            else
+            {
+                document.getElementById("surnameCheck").innerHTML = "Поле заполнено верно";
+                return;
+            }
+
+            var patternMidllename = new RegExp(/^([a-zA-Z])$/);
+            if (!patternMidllename.test(middlename)){
+                document.getElementById("middlenameCheck").innerHTML = "Отчество должно состоять только из букв!";
+                return;
+            }
+            else
+            {
+                document.getElementById("middlenameCheck").innerHTML = "Поле заполнено верно";
+                return;
+            }
+
+            var patternPassport = new RegExp(/^([0-9_\-])+$/);
+            if (!patternPassport.test(passport)){
+                document.getElementById("passportCheck").innerHTML = "Не верно заполнено поле. Пример заполнения: 1111_111111!";
+                return;
+            }
+            else
+            {
+                document.getElementById("passportCheck").innerHTML = "Поле заполнено верно";
+                return;
+            }
+
+            var patternDate = new RegExp(/^([0-9_\.])+$/);
+            if (!patternDate.test(birthday)){
+                document.getElementById("dateCheck").innerHTML = "Не верно заполнено поле. Пример заполнения: 2000.01.22";
+                return;
+            }
+            else
+            {
+                document.getElementById("dateCheck").innerHTML = "Поле заполнено верно";
+                return;
+            }
 
             $.ajax({
                 type: "GET",
@@ -61,28 +150,12 @@
             var theEvent = evt || window.event;
             var key = theEvent.keyCode || theEvent.which;
             key = String.fromCharCode( key );
-            var regex = /[0-9]|\./;
+            var regex = /[0-9]+ \-/;
             if( !regex.test(key) ) {
                 theEvent.returnValue = false;
                 if(theEvent.preventDefault) theEvent.preventDefault();
             }
         }
-
-
-        function isValidEmailAddress(emailAddress) {
-
-            var email = document.getElementById("email").value;
-            var pattern = new RegExp(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
-            if(!pattern.test(emailAddress))
-            {
-                alert("no");
-            }
-            else
-            {
-                alert("yes");
-            }
-        }
-
 
     </script>
 
@@ -118,14 +191,14 @@
     </br>
 
     <fieldset id="inputs">
-        <input id="user" type="text" placeholder="Логин" autofocus required></br>
+        <input id="user" type="text" placeholder="Логин" required><div  id="loginCheck"></div></br>
         <input id="pass" type="password" placeholder="Пароль" required>   </br>
-        <input id="name" type="text" placeholder="Имя" autofocus required>  </br>
-        <input id="surname" type="text" placeholder="Фамилия" autofocus required>   </br>
-        <input id="middlename" type="text" placeholder="Отчество" autofocus required> </br>
-        <input id="email" onkeyup="isValidEmailAddress(this.value)" type="text" placeholder="E-mail" autofocus required></br>
-        <input id="passport"  onkeypress="onlyNumber(event)" maxlength="4" type="text"  placeholder="Пасспорт" required> </br>
-        <input id="birthday"  maxlength="10" type="text" placeholder="Дата рождения" autofocus required> </br>
+        <input id="name" type="text" placeholder="Имя"  required> <div  id="nameCheck"></div> </br>
+        <input id="surname" type="text" placeholder="Фамилия" required><div  id="surnameCheck"></div>   </br>
+        <input id="middlename" type="text" placeholder="Отчество" required><div  id="middlenameCheck"></div> </br>
+        <input id="email" type="text" placeholder="E-mail" required><div  id="emailCheck"></div></br>
+        <input id="passport"   maxlength="4" type="text"  placeholder="Пасспорт" required><div  id="passportCheck"></div> </br>
+        <input id="birthday"  maxlength="10" type="text" placeholder="Дата рождения"  required> <div  id="dateCheck"></div></br>
     </fieldset>
         <button onclick="onButton()">Регистрация</button>
         </td>
